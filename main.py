@@ -16,5 +16,5 @@ def comprar_titulo(
     if credentials.username != "admin" or credentials.password != "12345":
         raise HTTPException(status_code=401, detail="Autenticação falhou")
     
-    return {"status": "OK", "mensagem": "Compra registrada com sucesso"}
+    return {"status": "OK", "mensagem": "Compra registrada com sucesso. Segue codigo pix para pagamento: pix1234567890abcd"}
 
